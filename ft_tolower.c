@@ -6,60 +6,49 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/03 20:18:33 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/04 12:43:15 by nepcohen         ###   ########.fr       */
+/*   Updated: 2026/05/04 21:01:53 by nepcohen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* === PROG ================================================================= */
 
-char	ft_tolower(char *c)
+int	ft_tolower(int c)
 {
-	int	count;
-
-	count = 0;
-	while(c[count] != '\0')
+	if(c >= 'A' && c <= 'Z')
 	{
-		if(c[count] >= 'a' && c[count] <= 'z')
-		{
-			c[count] = c[count] + 32;
-		}
-		count++;
+		c = c + 32;
 	}
-	return(c);
+	return (c);
 }
 /* === MAIN ================================================================= */
 
 #include <unistd.h>
+#include <stdio.h>
 
 static void	ft_putchar(char value)
 {
 	write(1, &value, 1);
 }
 
-static void	ft_putstr(char *str)
+static void	display(char play)
 {
-	int	count;
-
-	count = 0;
-	while(str[count] != '\0')
-	{
-		ft_putchar(str[count];
-		count++;
-	}
+	ft_tolower(play);
+	ft_putchar(play);
 }
 
 int main(int argc, char **argv)
 {
-	char	message[] = "Merci de saisir un argument";
+	//	char	message[] = "Merci de saisir un argument";
 
 	if (argv == 2)
 	{
-		ft_
+		display(argc[1]);
 	}
 	else
 	{
-		ft_putstr(message);
+
 	}
+	return(0);
 }
 
 /* ========================================================================== */

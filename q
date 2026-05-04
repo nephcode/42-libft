@@ -1,0 +1,101 @@
+[4mtoupper[24m(3)                    Library Functions Manual                    [4mtoupper[24m(3)
+
+[1mNAME[0m
+       toupper, tolower, toupper_l, tolower_l - convert uppercase or lowercase
+
+[1mLIBRARY[0m
+       Standard C library ([4mlibc[24m, [4m-lc[24m)
+
+[1mSYNOPSIS[0m
+       [1m#include <ctype.h>[0m
+
+       [1mint toupper(int [4m[22mc[24m[1m);[0m
+       [1mint tolower(int [4m[22mc[24m[1m);[0m
+
+       [1mint toupper_l(int [4m[22mc[24m[1m, locale_t [4m[22mlocale[24m[1m);[0m
+       [1mint tolower_l(int [4m[22mc[24m[1m, locale_t [4m[22mlocale[24m[1m);[0m
+
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[22m(7)):
+
+       [1mtoupper_l[22m(), [1mtolower_l[22m():
+           Since glibc 2.10:
+               _XOPEN_SOURCE >= 700
+           Before glibc 2.10:
+               _GNU_SOURCE
+
+[1mDESCRIPTION[0m
+       These functions convert lowercase letters to uppercase, and vice versa.
+
+       If [4mc[24m is a lowercase letter, [1mtoupper[22m() returns its uppercase equivalent, if an
+       uppercase representation exists in the current locale.  Otherwise, it returns
+       [4mc[24m.   The [1mtoupper_l[22m() function performs the same task, but uses the locale re‐
+       ferred to by the locale handle [4mlocale[24m.
+
+       If [4mc[24m is an uppercase letter, [1mtolower[22m() returns its lowercase equivalent, if a
+       lowercase representation exists in the current locale.  Otherwise, it returns
+       [4mc[24m.  The [1mtolower_l[22m() function performs the same task, but uses the locale  re‐
+       ferred to by the locale handle [4mlocale[24m.
+
+       If  [4mc[24m  is neither an [4munsigned[24m [4mchar[24m value nor [1mEOF[22m, the behavior of these func‐
+       tions is undefined.
+
+       The behavior of [1mtoupper_l[22m() and [1mtolower_l[22m() is undefined  if  [4mlocale[24m  is  the
+       special  locale  object [1mLC_GLOBAL_LOCALE [22m(see [1mduplocale[22m(3)) or is not a valid
+       locale object handle.
+
+[1mRETURN VALUE[0m
+       The value returned is that of the converted letter, or [4mc[24m  if  the  conversion
+       was not possible.
+
+[1mATTRIBUTES[0m
+       For an explanation of the terms used in this section, see [1mattributes[22m(7).
+       ┌─────────────────────────────────────────────────┬───────────────┬─────────┐
+       │ [1mInterface                                       [22m│ [1mAttribute     [22m│ [1mValue   [22m│
+       ├─────────────────────────────────────────────────┼───────────────┼─────────┤
+       │ [1mtoupper[22m(), [1mtolower[22m(), [1mtoupper_l[22m(), [1mtolower_l[22m()  │ Thread safety │ MT-Safe │
+       └─────────────────────────────────────────────────┴───────────────┴─────────┘
+
+[1mSTANDARDS[0m
+       [1mtoupper[22m()
+       [1mtolower[22m()
+              C11, POSIX.1-2008.
+
+       [1mtoupper_l[22m()
+       [1mtolower_l[22m()
+              POSIX.1-2008.
+
+[1mHISTORY[0m
+       [1mtoupper[22m()
+       [1mtolower[22m()
+              C89, 4.3BSD, POSIX.1-2001.
+
+       [1mtoupper_l[22m()
+       [1mtolower_l[22m()
+              POSIX.1-2008.
+
+[1mNOTES[0m
+       The  standards  require that the argument [4mc[24m for these functions is either [1mEOF[0m
+       or a value that is representable in the type [4munsigned[24m [4mchar[24m.  If the  argument
+       [4mc[24m  is of type [4mchar[24m, it must be cast to [4munsigned[24m [4mchar[24m, as in the following ex‐
+       ample:
+
+           char c;
+           ...
+           res = toupper((unsigned char) c);
+
+       This is necessary because [4mchar[24m may be the equivalent [4msigned[24m  [4mchar[24m,  in  which
+       case  a  byte where the top bit is set would be sign extended when converting
+       to [4mint[24m, yielding a value that is outside the range of [4munsigned[24m [4mchar[24m.
+
+       The details of what constitutes an uppercase or lowercase  letter  depend  on
+       the locale.  For example, the default [1m"C" [22mlocale does not know about umlauts,
+       so no conversion is done for them.
+
+       In  some non-English locales, there are lowercase letters with no correspond‐
+       ing uppercase equivalent; the German sharp s is one example.
+
+[1mSEE ALSO[0m
+       [1misalpha[22m(3),  [1mnewlocale[22m(3),  [1msetlocale[22m(3),  [1mtowlower[22m(3),  [1mtowupper[22m(3),  [1muselo‐[0m
+       [1mcale[22m(3), [1mlocale[22m(7)
+
+Linux man-pages 6.13                 2024-07-23                           [4mtoupper[24m(3)
