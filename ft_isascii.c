@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/06 19:52:48 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/06 19:59:06 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/11 19:07:26 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@ int	ft_isascii(int c)
 	if(!(c >= 0 && c <= 127))
 		return (0);
 	else
-		return (c);
+		return (1);
 }
