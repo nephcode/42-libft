@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/11 20:05:27 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/11 22:49:04 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/13 03:08:50 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ int main(int argc, char **argv)
 {
 	char	message[] = "Merci de saisir un argument";
 
-	if (argv == 2)
+	if (argc == 2)
 	{
-		display(argc[1]);
+		display(argv[1]);
 		ft_putchar('\n');
 	}
 	else
