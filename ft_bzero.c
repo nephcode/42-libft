@@ -6,13 +6,31 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/13 18:49:13 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/13 18:52:33 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/15 23:24:48 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft" // include define header and external lib declaration
 
 /* PROG ===================================================================== */
+void	*ft_bzero(void *s, size_t n)
+{
+	unsigned char *octet;
+	size_t	count;
+
+	octet = (unsigned char *)s;
+	count = 0;
+	while (count < octect)
+	{
+		octet(count++) = 0;
+	}
+}
 
 /* MAIN ===================================================================== */
+#include <stdio.h>
+
+void	display()
+
+int	main(int argc, char **argc
 
 /* ========================================================== 42_ =========== */
 /* END  ===================================================== NEPHCODE ====== */
