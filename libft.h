@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/01 21:50:31 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/18 23:45:34 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/19 00:25:56 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,30 +25,30 @@ typedef struct	s_list
 /* PROTOTYPES =============================================================== */
 
 // PART 1 // CLASSIC LIBC
-int strlen()
-isalpha
-isdigit
-isalnum
-isascii
-isprint
-strlen
-memset
-bzero
-memcpy
-memmove
-trlcpy
-strlcat
-toupper
-tolower
-strchr
-strrchr
-strncmp
-memchr
-memcmp
-strnstr
-atoi
-calloc //malloc
-strup //malloc
+
+int		ft_isalpha(int c)
+int		ft_isdigit(int c)
+int		ft_isalnum(int c)
+int		ft_isdigit(int c)
+int		ft_isdigit(int c)
+int		ft_strlen(char *str)
+void	*ft_memset(void s, int c, size_t n);
+void	*ft_bzero(void *s, size_t n)
+void	ft_memcpy(void dest[], const void src[], size_t n);
+void	*ft_memmove(void dest[], const void src[.n], size_t n);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+char	ft_strchr(const char *s, int c);
+char	ft_strrchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char s2, size_t n);
+void	*ft_memchr(const void s, int c, size_t n);
+void	ft_memcmp( const void s1, const void s2, size_t n);
+char	*ft)strnstr(const char *big, const char *little, size_t len);
+int		ft)atoi(const char *nptr);
+void	ft_calloc(size_t n, size_t size); //malloc
+void	ft_strdup(const char *s); //malloc
 
 
 // PART 2 // BONUS LIBFT
