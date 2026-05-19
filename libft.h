@@ -6,18 +6,18 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/01 21:50:31 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/19 00:25:56 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/19 00:34:06 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef libtf.c
 #define
 
-typedef struct	s_list
+typedef struct		s_list
 {
-	void	*content;
-	struct _slist	*next;
-}				t_list;
+	void			*content;
+	struct	s_list	*next;
+}					t_list;
 
 #include <strings.h>
 #include <stdio.h>
@@ -45,8 +45,8 @@ char	ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char s2, size_t n);
 void	*ft_memchr(const void s, int c, size_t n);
 void	ft_memcmp( const void s1, const void s2, size_t n);
-char	*ft)strnstr(const char *big, const char *little, size_t len);
-int		ft)atoi(const char *nptr);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_atoi(const char *nptr);
 void	ft_calloc(size_t n, size_t size); //malloc
 void	ft_strdup(const char *s); //malloc
 
