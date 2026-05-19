@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/19 03:07:05 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/19 08:05:58 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/19 11:05:43 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <strings.h>
@@ -14,9 +14,12 @@
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	int				count;
-	char unsigned	c1;
-	char unsigned	c2;
+	unsigned char	*c1;
+	unsigned char	*c2;
 	
+	c1 = (const unsigned char *)s1;
+	c2 = (const unsigned char *)s2;
+
 	count = 0;
 	while(count < n)
 	{
