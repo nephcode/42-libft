@@ -30,6 +30,8 @@ Long story Short, simple resume of libFT. That'a my first in C. first graft on 4
 
 The best ressources are mine and the others are beautiful. Below, the complete stack to build my libft.
 
+Follow my work **[BuilInPublic](https://github.com/users/nephcode/projects/8)**
+
 | Type       | Source                                                              | Why                                         |
 | :--------- | :------------------------------------------------------------------ | :------------------------------------------ |
 | 42 Jacuzzi | [git@nephcode/42jacuzzi](https://github.com/nephcode/42jacuzzi.git) | Some tricks for 42 student                  |
