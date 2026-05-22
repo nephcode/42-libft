@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/01 21:50:31 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/19 00:34:06 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/22 20:23:03 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,20 +58,20 @@ char	*ft_strtrim(char const *s1, char const *set);//malloc
 char	**ft_split(char const *s, char c);//malloc,free
 char	*ft_itoa(int n);//malloc
 char	*ft_strmapi(char const *s, char (f*)(unsigned int, char));//malloc
-void	ft_sriteri(char *s, void (*f)(unsigned int, char*));
-void	ft_putchard_fd(char c, int fd);
+void	ft_srtiteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd); // begin with this 
 
 // PART 3 // CHAIN
-t_list	**ft_lstnew(void *content); //malloc
+t_list	*ft_lstnew(void *content); //malloc
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *)); //free
-void	ft_ftlstclear(l_list **lst, void (*del)(void *));
+void	ft_lstclear(l_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_List *lst, void *(*f)(void *), void (*del)(void*));
 
