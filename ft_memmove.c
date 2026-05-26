@@ -6,35 +6,49 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/21 17:53:17 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/26 20:36:09 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/26 21:18:41 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
-include <stddef.h>
+#include <stddef.h>
 /* PROG ===================================================================== */
+static void	avant(unsigned char *d, unsigned const char *s, size_t n)
+{
+	size_t count;
+
+	count = 0;
+	while(count < n)
+	{
+		d[count] = s[count];
+		count++;
+	}
+}
+
+static void	arriere(unsigned char *d, unsigned const char *s, size_t n)
+{
+	size_t	count;
+
+	count = n;
+	while(n > 0)
+	{
+		count--;
+		d[count] = s[count];
+	}
+}
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t				count;
 	unsigned char		*d;
 	unsigned const char *s;
 
 	d = (unsigned char*)dest;
 	s = (unsigned const char*)src;
-	count = 0;
 	if (dest < src)
-	{
-		while(count < n)
-		{
-			dest[count] = src[count];
-			count++;
-		}
+		avant(d, s, n);
 	else if (dest > src)
 	{
-		while(count < n)
-			dest[count] = src[count];
-			count--;
+		arriere(d, s, n);
 	}
-	return(dest));
+	return (dest);
 }
 /* MAIN ===================================================================== */
 
