@@ -6,15 +6,26 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/20 15:37:20 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/25 14:54:14 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/26 14:49:36 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stddef.h>
 /* PROG ===================================================================== */
-		// use memmove >> 
 void	ft_memcpy(void *dest, const void *src, size_t n)
 {
-	///
+	size_t				count;
+	unsigned char		*d;
+	unsigned const char	*s;
+	
+	d = (unsigned char*)dest;
+	s = (unsigned const char*)src;
+	count = 0;
+	while (count < n)
+	{
+		d[count] = s[count];
+		count++;
+	}
+	return (dest);
 }
 
 /* MAIN ===================================================================== */
