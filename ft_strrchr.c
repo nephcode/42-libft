@@ -6,10 +6,10 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/27 21:14:50 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/28 21:12:41 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/05/29 04:37:21 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stddef.h>
 /* PROG ===================================================================== */
 static int	len(char *chain)
 {
@@ -25,22 +25,23 @@ static int	len(char *chain)
 // ----------------------------------------------------------------------------
 char	*strrchr(const char *s, int c)
 {
-	int	count;
-	int	final; 
+	size_t	count; 
 
-	final = len((char *)s);
-	while (final[count] > 0)
+	count = len((char *)s);
+	while (count > 0)
 	{
-		if ((char)s[count] != '\0')
+		if (s[count] == (char)c)
 		{
 			return ((char *)&s[count]);
 		}
 		count--;
 	}
-	if ((char)s[count] == '\0')
+	if (s[0] == (char)c)
 	{
-		return (NULL);
+
+		return ((char *)&s[count]);
 	}
+	return (NULL);
 }
 /* MAIN ===================================================================== */
 #include <stdlib.h>
@@ -71,4 +72,4 @@ int main(int argc, char **argv)
 
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
-/* ================================================================= NEPHCODE */
+/* ===== 00101010 ================================================== NEPHCODE */
