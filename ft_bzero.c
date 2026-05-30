@@ -6,37 +6,36 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/13 18:49:13 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/30 04:12:49 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/05/31 00:03:22 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft" // include define header and external lib declaration
-
+//#include "libft" // include define header and external lib declaratio
+#include <stddef.h>
 /* PROG ===================================================================== */
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *octet;
-	size_t	count;
+	size_t			count;
+	unsigned char	*octet;
 
 	octet = (unsigned char *)s;
 	count = 0;
-	while (count < octect)
+	while (count < n)
 	{
-		octet(count++) = 0;
+		octet[count] = 0;
+		count++;
 	}
 }
 
 /* MAIN ===================================================================== */
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
+//#include <stddef.h>
 
-void	display(void playS, size_t playN)
+void	display(char *playS, size_t playN)
 {
-	printf("\n", playS, playN);
+		printf("Chaine :`%s` longueur `%zu`\n", playS, playN);
 	ft_bzero(playS, playN);
-	printf();
-
-
+	printf("Apres `%s`\n", playS);
 }
 
 int	main(int argc, char **argv)
