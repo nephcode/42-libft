@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/31 18:37:23 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/31 20:36:17 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/05/31 22:49:40 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,10 @@ void	display(const char *playB, const char *playL, size_t playN)
 	printf("Taille : `%zu`\n", playN);
 	result = ft_strnstr(playB, playL, playN);
 	if (result == 0)
-		printf "
-	if
+		printf ("Len 0 > Return :`%s`\n", playB);
+	if (
 		printf("Rien"
+	if (
 }
 
 int	main(int argc, char **argv)
