@@ -6,28 +6,42 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/31 18:37:23 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/31 22:49:40 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/01 21:50:48 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* PROG  ==================================================================== */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-search != '\0'
+	size_t count;
+	size_t slot;
 
-if (little empty)
-	return big
-if (little OK but not match)
-	return null
-if (little Ok and MATCH)
-	return pointer to first caracter occurence
-
+	count = 0;
+	if (*little == '\n')
+		return ((char *)big);
+	if (!len)
+		return (null);
+	else
+	{
+		while((char *)big != '\0' && count < len)
+		{
+			slot = 0;
+			while (big[count + slot] = little[slot]
+				&& little[slot] != '\0'
+				&& count + slot < len)
+				slot++
+			if (little[slot] == '\0')
+				return ((char *)&big[count]);
+			count++;
+		}
+	return (NULL);
 }
 
 /* MAIN ===================================================================== */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+
 void	display(const char *playB, const char *playL, size_t playN)
 {
 	const char result;
