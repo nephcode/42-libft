@@ -6,13 +6,40 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/02 15:48:27 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/02 15:53:11 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/02 18:18:25 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* PROG ===================================================================== */
+int	ft_atoi(const char *nptr)
+{
+	// pseudocode
+	// ignorer les espaces 9-13 // 32
+	// lire les - et + 
+	// lire les chiffres
+	// construire le nombre
+	// retourner le resultat signe
+	//
+	
+
+
+
+	return ();
+}
 
 /* MAIN ===================================================================== */
+#include <stdio.h>
+
+int	main(int argc, char **argv)
+{
+	if (argc != 2)
+		printf("Merci de saisir un argument");
+	else
+	{
+		printf("INT : `%d`, argv[1]);
+	}
+	return (0);
+}
 
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
