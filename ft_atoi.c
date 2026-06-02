@@ -6,27 +6,36 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/02 15:48:27 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/02 18:18:25 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/02 20:40:01 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* PROG ===================================================================== */
+
 int	ft_atoi(const char *nptr)
 {
-	// pseudocode
-	// ignorer les espaces 9-13 // 32
-	// lire les - et + 
-	// lire les chiffres
-	// construire le nombre
-	// retourner le resultat signe
-	//
-	
+	int	count;
+	int	result;
+	int	symbol;
 
-
-
-	return ();
+	count = 0;
+	result = 0;
+	symbol = 1;
+	while (nptr[count] == 32 || (nptr[count] >= 9 && nptr[count] <= 13))
+		count++;
+	if (nptr[count] == '-' || nptr[count] == '+')
+	{
+		if (nptr[count] == '-')
+			symbol = -1;
+		count++;
+	}
+	while (nptr[count] >= '0' && nptr[count] <= '9')
+	{
+		result = result * 10 + (nptr[count] - '0');
+		count++;
+	}
+	return (symbol * result);
 }
-
 /* MAIN ===================================================================== */
 #include <stdio.h>
 
@@ -35,12 +44,9 @@ int	main(int argc, char **argv)
 	if (argc != 2)
 		printf("Merci de saisir un argument");
 	else
-	{
-		printf("INT : `%d`, argv[1]);
-	}
+		printf("INT : `%d`\n", ft_atoi(argv[1]));
 	return (0);
 }
-
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */
