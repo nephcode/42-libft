@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/03 15:13:23 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/03 16:30:29 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/03 16:39:47 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -21,7 +21,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n < -2147483647)
 	{
 		write(fd, "-2147483648", 11);
-		return;
+		return ;
 	}
 	if (n < 0)
 	{
@@ -62,10 +62,9 @@ static int	ft_atoi(const char *nptr)
 	return (symbol * result);
 }
 
-
 int	main(int argc, char **argv)
 {
-	if(argc != 3)
+	if (argc != 3)
 		printf("merci de saisir les arguments du main");
 	else
 	{
@@ -74,8 +73,6 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-
-
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */
