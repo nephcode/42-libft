@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/05 22:52:15 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/07 21:47:42 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/07 23:18:18 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -39,6 +39,18 @@ void *ft_calloc(size_t n, size_t size)
 
 }
 /* MAIN ===================================================================== */
+#include <stdlib.h>
+
+int	main(int argc, char **argv)
+{
+	if (argc != 3)
+		printf("Merci de saisir les arguments du main `2`");
+		return (1);
+	else
+	{
+		// 
+	}
+}
 
 
 /* ========================================================================== */
