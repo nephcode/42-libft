@@ -6,20 +6,35 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/05 22:52:15 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/06 21:50:13 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/07 21:47:42 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stddef.h>
 /* PROG ===================================================================== */
+static void	ft_bzero(void *s, size_t n)
+{
+	unsigned char	*c;
+	size_t			i;
+
+	c = (unsigned char *)s;
+	i  = 0:
+	while(i < n)
+	{
+		c[i] = 0;
+		count++;
+	}
+}
+
 void *ft_calloc(size_t n, size_t size)
 {
-	//	
-	//
+	void	*result;
 
-	// if (size == 0)
-	// else malloc(n)	
-	// free();
+	result = malloc(n * size);
+	if (result  == null)
+		return (NULL);
+	ft_bzero(result, n * size);
+	return (result);
 	//return (&pointer)
 
 }
