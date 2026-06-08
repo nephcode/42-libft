@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/16 20:55:29 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/08 19:01:57 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/08 21:25:25 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -20,7 +20,7 @@ static size_t	ft_strlen(const char *value)
 		value++;
 	return (value - length);
 }
-
+// ---------------------------------------------------------------------------//
 static *ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			count;
@@ -37,25 +37,44 @@ static *ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// malloc et free 
+// ---------------------------------------------------------------------------//
 char *ft_strdup(const char *s)
 {
-	copy 	// take = strlen define the char size
-	// keep = malloc (take *sizeof(char))
-	// memcpy (keep 
-	// return
-}
+	char *copy 
 
+	copy = malloc(strlen(s) +1);
+	if (copy == NULL)
+		return (NULL);
+	else
+	{
+		ft_memcpy(copy, s, ft_strlen(s) +1);
+		return (copy);
+	}
+}
 /* MAIN ===================================================================== */
-static void	display()
+#include 
+
+static void	display(const void *playS)
 {
-	//
+	char *playMain;
+
+	playMain = ft_strdup(playS);
+	printf("chain : `%s`\n", playMain);
+	free(playMain);
 }
 
 int	main(int argc, char **argv)
 {
-	//
+	if (argc != 2)
+	{
+		printf("Merci de saisir les arguments");
+		return (1);
+	}
+	else
+	{
+		display(argv[1]);
+		return (0);
+	}
 }
 /* ========================================================================== */
 /* END  ======================================================= 42_ ========= */
