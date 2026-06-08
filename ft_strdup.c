@@ -6,10 +6,11 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/16 20:55:29 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/08 21:25:25 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/08 21:39:33 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
+#include <stdlib.h>
 /* PROG ===================================================================== */
 static size_t	ft_strlen(const char *value)
 {
@@ -21,15 +22,15 @@ static size_t	ft_strlen(const char *value)
 	return (value - length);
 }
 // ---------------------------------------------------------------------------//
-static *ft_memcpy(void *dest, const void *src, size_t n)
+static void	 *ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t			count;
-	unsigned char	*d;
-	unsigned char	*s;
+	size_t				count;
+	unsigned char		*d;
+	const unsigned char	*s;
 
 	d = (unsigned char *)dest;
-	s = (unsigned char *)src;
-	count = 0
+	s = (const unsigned char *)src;
+	count = 0;
 	while (count < n)
 	{
 		d[count] = s[count];
@@ -40,21 +41,21 @@ static *ft_memcpy(void *dest, const void *src, size_t n)
 // ---------------------------------------------------------------------------//
 char *ft_strdup(const char *s)
 {
-	char *copy 
+	char *copy;
 
-	copy = malloc(strlen(s) +1);
+	copy = malloc(ft_strlen(s) + 1);
 	if (copy == NULL)
 		return (NULL);
 	else
 	{
-		ft_memcpy(copy, s, ft_strlen(s) +1);
+		ft_memcpy(copy, s, ft_strlen(s) + 1);
 		return (copy);
 	}
 }
 /* MAIN ===================================================================== */
-#include 
+#include <stdio.h>
 
-static void	display(const void *playS)
+static void	display(const char *playS)
 {
 	char *playMain;
 
