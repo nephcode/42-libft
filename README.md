@@ -60,12 +60,37 @@ Long story Short, simple resume of libFT. That'a my first in C. first graft on 4
 
 ## INSTRUCTIONS
 
-1. Bash norminette > OK 💚 or 💔 KO
-2. Import main test from nephcode repository
-3. Download Libft test & main from :
-   - https://github.com/nephcode/42unitest.git
-4. Please use the flags `cc -Wall -Wextra -Werror`
+Test norminette > OK 💚 or 💔 KO
+```bash
+norminette ./ 
+```
 
+Import main test from nephcode repository. Download Libft test & main from :
+```http
+https://github.com/nephcode/42unitest.git
+```
+
+Please use the flags like `cc -flag functionName -o programName`
+```bash
+cc -Wall -Wextra -Werror
+```
+
+Functions have a specific test Main in comment. if you want to test the function with argv parameter it is ok 
+
+```bash
+./functionName [paramater]
+```
+
+Check the memory (exemple calloc)
+```bash 
+ valgrind --leak-check=full ./calloc_test 5
+```
+
+
+Makefile
+```bash
+make
+```
 ## RESSOURCES
 
 The best ressources are mine and the others are beautiful. Below, the complete stack to build my libft.
