@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/11 21:25:59 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/11 22:46:24 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/11 22:58:54 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -45,31 +45,33 @@ static void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 // -------------------------------------------------------------------------- //
 
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	chain_one;
 	size_t	chain_two;
 	size_t	lengthcopy;
 	char	*ramcopy;
 
-	chain_one = (unsigned size_t)strlen(s1);
-	chain_two = strlen(s2);
-	lenghtcopy = (chain_one + chain_two + 1);
+	chain_one = ft_strlen(s1);
+	chain_two = ft_strlen(s2);
+	lengthcopy = (chain_one + chain_two + 1);
 	ramcopy = malloc(lengthcopy);
 	if (ramcopy == NULL)
 		return (NULL);
-	ft_memcpy(ramcopy, (s1 + s2 + '\0'), lengthcopy);
+	ft_memcpy(ramcopy, s1, chain_one);
+	ft_memcpy(ramcopy + chain_one, s2, chain_two);
+	ramcopy[chain_one + chain_two] = '\0';
 	return (ramcopy);
 }
 /* MAIN ===================================================================== */
 #include <stdio.h>
 
-static void	display(char const *play1, unsigned int play2)
+static void	display(const char *play1, const char *play2)
 {
 	char	*playMain;
 
 	printf("Chaine 1 : `%s`\n Chaine 2 : `%s`\n", play1, play2);
-	playMain = ft_substr(play1, play2);
+	playMain = ft_strjoin(play1, play2);
 	printf("Join : `%s`\n", playMain);
 	free(playMain);
 }
