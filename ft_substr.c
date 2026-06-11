@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/08 21:45:11 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/10 23:52:11 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/06/11 20:03:48 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -43,10 +43,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*copy;
 	
-
 	copy = malloc(len +1);
 	if (copy == NULL)
 		return (NULL);
+	// add  conditions
 	else
 	{
 		ft_memcpy(copy, s + start, len + 1);
@@ -54,6 +54,24 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 }
 /* MAIN ===================================================================== */
+static int minitoi(unsigned char *toi)
+{
+	int  *result;
+
+	result = 0;
+	while(*toi >= '0' && *toi <= '9')
+	{
+		result = result * 10 +(*toi - '0');
+		toi++;
+	}
+	return (toi - (result);
+}
+
+static void display(char const *playS, unsigned int PlayOn, size_t playL)
+{
+	
+}
+
 int	main(int argc, char **argv)
 {
 	// CODE
