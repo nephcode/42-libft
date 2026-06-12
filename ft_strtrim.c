@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 02:03:17 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/06/12 03:27:52 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/06/12 03:52:21 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -17,12 +17,14 @@
 
 // -------------------------------------------------------------------------- //
 
-
-
-char	*ft_strstrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
- //
- // malloc
+ // while s1> head skip set // i= 0 // i++
+ // head in cache
+ // while head by end // tail skip set
+ // cache tail
+ // malloc (tail)
+ // return tail \0
 
 }
 /* MAIN ===================================================================== */
