@@ -6,17 +6,17 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/04/29 17:24:37 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/29 04:39:20 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/06/12 19:16:06 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*=== PROG ===================================================================*/
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *s)
 {
-	int count;
+	size_t	count;
 	
 	count = 0;
-	while(str[count] != '\0')
+	while(s[count])
 	{
 		count++;
 	}
