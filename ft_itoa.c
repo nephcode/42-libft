@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 21:24:45 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/15 02:17:43 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/06/15 19:02:19 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,12 @@ static int	nephtoi(const char *nptr)
 }
 
 
-static void	display()
+static void	display(int *play)
 {
- // code here
+	
+	ft_itoa(play);
+	printf("Result CHAR : `%s`\n", play);
+
 }
 
 // -------------------------------------------------------------------------- //
@@ -65,6 +68,7 @@ int	main(int argc, **argv)
 		return (1)
 	}
 	display(nephtoi(argv[1]));
+	return (0);
 }
 
 
