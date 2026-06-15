@@ -6,13 +6,34 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 21:24:45 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/15 19:02:19 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/15 20:14:54 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdlib.h>
 /* PROG ===================================================================== */
 char	*ft_itoa(int n)
 {
+	int	chain;
+	int	lengthchain;
+	int	symbol;
+
+	if(!n)
+		return (NULL;
+
+	lengthchain = 0;
+	if (n < 0 )
+	{
+		lengthchain + 1;
+		chain[0] = '-';
+		-n = n;
+	}
+	if (n > 10)
+		ft_itoa(n / 10);
+	chain = n % 10 + '0';
+	lengthchain = malloc
+
+
+	
 	//while space
 	
 	//if symbol
@@ -20,6 +41,7 @@ char	*ft_itoa(int n)
 	//while number  
 	// putmbn
 	// return ft_subtr
+	//
 	//
 	//
 
