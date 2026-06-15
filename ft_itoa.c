@@ -6,35 +6,46 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 21:24:45 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/15 20:14:54 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/15 23:12:37 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
+
+static size_t digitcount(int num)
+{
+	size_t	length;
+	long	nb;
+
+	nb = num;
+	length = 0;
+	if (nb <= 0)
+		length+;
+	if (nb < 0)
+		 nb = -nb;
+	while (nb > 0)
+	{
+		nb = nb / 10;
+		length++;
+	}
+	return (length);
+}
 /* PROG ===================================================================== */
 char	*ft_itoa(int n)
 {
-	int	chain;
-	int	lengthchain;
-	int	symbol;
+	char	*chain;
+	int		symbol;
+	
 
+	chain = malloc(digitcount(n)
 	if(!n)
-		return (NULL;
-
-	lengthchain = 0;
+		return (0);
 	if (n < 0 )
 	{
-		lengthchain + 1;
-		chain[0] = '-';
-		-n = n;
+		
 	}
-	if (n > 10)
-		ft_itoa(n / 10);
-	chain = n % 10 + '0';
-	lengthchain = malloc
 
 
 	
-	//while space
 	
 	//if symbol
 	
