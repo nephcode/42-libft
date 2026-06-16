@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/06/16 05:05:22 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/06/16 16:16:18 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -35,9 +35,37 @@ char	*strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	length = ft_strlen(s);
 	value = (char *)malloc(sizeof(char) * (length + 1));
+	if (value == 0)
+		return (0);
+	if (!value)
+		return (NULL);
+	count = 0;
+	while()
+
 
 }
 /* ========================================================================== */
+static void upAdapter()
+{
+	void index;
+	touppper();
+}
+
+static void	display (char *playS, char) 
+{
+	char *result;
+	printf("avant")
+	result = stra
+	printf("Apres")
+}
+
+int main (argc, argv)
+{
+	return (1)
+
+		display(arg[1]);
+	return (0);
+}
 
 /* ========================================================================== */
 /* END ====================================================================== */
