@@ -6,12 +6,12 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 21:24:45 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/15 23:12:37 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/06/16 03:54:13 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 
-static size_t digitcount(int num)
+static size_t	digitcount(int num)
 {
 	size_t	length;
 	long	nb;
@@ -19,9 +19,9 @@ static size_t digitcount(int num)
 	nb = num;
 	length = 0;
 	if (nb <= 0)
-		length+;
+		length++;
 	if (nb < 0)
-		 nb = -nb;
+		nb = -nb;
 	while (nb > 0)
 	{
 		nb = nb / 10;
@@ -30,81 +30,85 @@ static size_t digitcount(int num)
 	return (length);
 }
 /* PROG ===================================================================== */
+
 char	*ft_itoa(int n)
 {
 	char	*chain;
-	int		symbol;
-	
+	int		length;
+	long	number;
 
-	chain = malloc(digitcount(n)
-	if(!n)
-		return (0);
-	if (n < 0 )
+	number = n;
+	length = digitcount(number);
+	chain = (char *)malloc(sizeof(char) * (length + 1));
+	if (!chain)
+		return (NULL);
+	chain[length] = '\0';
+	if (number < 0)
 	{
-		
+		chain[0] = '-';
+		number = -number;
 	}
-
-
-	
-	
-	//if symbol
-	
-	//while number  
-	// putmbn
-	// return ft_subtr
-	//
-	//
-	//
-
+	else if (number == 0)
+		chain[0] = '0';
+	while (number > 0)
+	{
+		chain[length - 1] = (number % 10) + '0';
+		length --;
+		number = number / 10;
+	}
+	return (chain);
 }
+
 /* MAIN ===================================================================== */
+#include <stdio.h>
+
 static int	nephtoi(const char *nptr)
 {
-        int     count;
-        int     result;
-        int     symbol;
+	int	count;
+	int	result;
+	int	symbol;
 
-        count = 0;
-        result = 0;
-        symbol = 1;
-        while (nptr[count] == 32 || (nptr[count] >= 9 && nptr[count] <= 13))
-                count++;
-        if (nptr[count] == '-' || nptr[count] == '+')
-        {
-                if (nptr[count] == '-')
-                        symbol = -1;
-                count++;
-        }
-        while (nptr[count] >= '0' && nptr[count] <= '9')
-        {
-                result = result * 10 + (nptr[count] - '0');
-                count++;
-        }
-        return (symbol * result);
+	count = 0;
+	result = 0;
+	symbol = 1;
+	while (nptr[count] == 32 || (nptr[count] >= 9 && nptr[count] <= 13))
+		count++;
+	if (nptr[count] == '-' || nptr[count] == '+')
+	{
+		if (nptr[count] == '-')
+		{
+			symbol = -1;
+			count++;
+		}
+	}
+	while (nptr[count] >= '0' && nptr[count] <= '9')
+	{
+		result = result * 10 + (nptr[count] - '0');
+		count++;
+	}
+	return (symbol * result);
 }
-
-
-static void	display(int *play)
+// -------------------------------------------------------------------------- //
+static void	display(int play)
 {
-	
-	ft_itoa(play);
-	printf("Result CHAR : `%s`\n", play);
+	char	*result;
 
+	result = ft_itoa(play);
+	printf("Result CHAR : `%s`\n", result);
+	free(result);
 }
 
 // -------------------------------------------------------------------------- //
-int	main(int argc, **argv)
+int	main(int argc, char **argv)
 {
 	if (argc != 2)
 	{
 		printf("Merci de saisir les arguments du main");
-		return (1)
+		return (1);
 	}
 	display(nephtoi(argv[1]));
 	return (0);
 }
-
-
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */
