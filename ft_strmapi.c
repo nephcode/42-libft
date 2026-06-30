@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/06/16 16:16:18 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/06/30 22:25:52 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -41,7 +41,7 @@ char	*strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	count = 0;
 	while()
-
+// keep calm and code
 
 }
 /* ========================================================================== */
