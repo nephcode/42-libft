@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/07/08 23:50:04 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/07/09 00:33:31 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -50,6 +50,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 }
 /* ========================================================================== */
+#include <stdio.h>
+
+static char	ft_toupper(unsigned int i, char c)
+{
+    (void)i;  // On n'utilise pas l'index ici, mais il est disponible
+    if (c >= 'a' && c <= 'z')
+        return (c - 32);  // Transforme en majuscule
+    return (c);
+}
+
 static void upAdapter()
 {
 	void index;
@@ -59,9 +69,11 @@ static void upAdapter()
 static void	display (char *playS, char) 
 {
 	char *result;
-	printf("avant")
-	result = stra
+
+	printf("Avant", %s\n, playS)
+	result = strmapi(playS, upAdapter);
 	printf("Apres")
+	free(result)
 }
 
 int main (argc, argv)
