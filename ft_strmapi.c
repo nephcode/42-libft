@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/06/30 22:25:52 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/07/08 23:50:04 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -25,7 +25,7 @@ static size_t ft_strlen(char *chain)
 
 // -------------------------------------------------------------------------- //
 
-char	*strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	count;
 	size_t			length;
@@ -40,15 +40,20 @@ char	*strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!value)
 		return (NULL);
 	count = 0;
-	while()
-// keep calm and code
+	while(count < length)
+	{
+		result[i] = f(i, s[i]);
+		i++;
+	}
+	result[i] = '\0';
+	return (result);
 
 }
 /* ========================================================================== */
 static void upAdapter()
 {
 	void index;
-	touppper();
+	ft_toupper();
 }
 
 static void	display (char *playS, char) 
