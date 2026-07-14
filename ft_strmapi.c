@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/07/09 00:33:31 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/07/13 23:59:52 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -22,7 +22,7 @@ static size_t ft_strlen(char *chain)
 	}
 	return (value - chain);
 }
-
+//
 // -------------------------------------------------------------------------- //
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
