@@ -3,10 +3,10 @@
 /*                                                             /#/  |#/|#|    */
 /*   ft_strmapi.c                                             /#/   |/ |#|    */
 /*                                                           /#/      /#/     */
-/*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
+/*   By: nephco <nephco@student.42.fr>                      /#/ 0x2A /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/07/13 23:59:52 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/07/15 23:57:19 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
