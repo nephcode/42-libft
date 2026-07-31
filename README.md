@@ -1,4 +1,4 @@
-_This activity has been created as part of the 42 curriculum by nepcohen_
+_This activity has been created as part of the 42 curriculum by nephcohe:_
 
 <!-- HEADER -->
 
@@ -112,4 +112,4 @@ Follow my work **[BuilInPublic](https://github.com/users/nephcode/projects/8)**
 
 <!-- FOOTER -->
 
-![Footer](https://etftsnavdbngasuikjid.supabase.co/storage/v1/object/public/42core/readmeFooterLibft.png)
+![Footer](https://42core.media.illuminateam.com/readmeF1ooter-42libft.png)
