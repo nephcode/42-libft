@@ -112,4 +112,4 @@ Follow my work **[BuilInPublic](https://github.com/users/nephcode/projects/8)**
 
 <!-- FOOTER -->
 
-![Footer](https://42core.media.illuminateam.com/readmeF1ooter-42libft.png)
+![Footer](https://42core.media.illuminateam.com/readmeFooter-42libft.png)
