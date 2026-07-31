@@ -2,7 +2,7 @@ _This activity has been created as part of the 42 curriculum by nepcohen_
 
 <!-- HEADER -->
 
-![Header](https://etftsnavdbngasuikjid.supabase.co/storage/v1/object/public/42core/readmeHeaderLibft.png)
+![Header](https://42core.media.illuminateam.com/readmeHeader-42libft.png)
 
 # LIBFT C
 
@@ -61,36 +61,41 @@ Long story Short, simple resume of libFT. That'a my first in C. first graft on 4
 ## INSTRUCTIONS
 
 Test norminette > OK 💚 or 💔 KO
+
 ```bash
-norminette ./ 
+norminette ./
 ```
 
 Import main test from nephcode repository. Download Libft test & main from :
+
 ```http
 https://github.com/nephcode/42unitest.git
 ```
 
 Please use the flags like `cc -flag functionName -o programName`
+
 ```bash
 cc -Wall -Wextra -Werror
 ```
 
-Functions have a specific test Main in comment. if you want to test the function with argv parameter it is ok 
+Functions have a specific test Main in comment. if you want to test the function with argv parameter it is ok
 
 ```bash
 ./functionName [paramater]
 ```
 
 Check the memory (exemple calloc)
-```bash 
+
+```bash
  valgrind --leak-check=full ./calloc_test 5
 ```
 
-
 Makefile
+
 ```bash
 make
 ```
+
 ## RESSOURCES
 
 The best ressources are mine and the others are beautiful. Below, the complete stack to build my libft.
