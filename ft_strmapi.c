@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/ 0x2A /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/07/15 23:57:19 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/08/04 23:57:37 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -49,6 +49,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 
 }
+// verifier la fonction 
 /* ========================================================================== */
 #include <stdio.h>
 
@@ -65,7 +66,7 @@ static void upAdapter()
 	void index;
 	ft_toupper();
 }
-
+// reprendre le code 
 static void	display (char *playS, char) 
 {
 	char *result;
