@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/ 0x2A /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/08/05 23:38:55 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/08/06 23:54:36 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -52,7 +52,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // verifier la fonction 
 /* ========================================================================== */
 #include <stdio.h>
-// je dois reprendre ici le code ste plaait neph, fait le je suis perdyu:
+// je dois reprendre ici le code ste plaait neph, fait le je suis perdue
 static char	ft_toupper(unsigned int i, char c)
 {
     (void)i;  // On n'utilise pas l'index ici, mais il est disponible
