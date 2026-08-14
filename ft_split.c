@@ -6,18 +6,35 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/17 23:58:55 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/08/13 23:55:36 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/08/14 23:55:19 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-ft_split ()
+
+
+void	nephallocation()
 {
-	// speak eassy
+
+}
+
+char	**ft_split(char const *s, char c);
+{
+	// s the string to be split
+	// c the delimiter caracter
+	char	result;
 }
 // ========================================================================== //
 // ========================================================================== //
 // ========================================================================== //
-int main ()
+char display(char const *playS, char playC)
 {
+	split (playS, playC)
+	free()
+	printf
+}
+
+int	main(int argc, char **argv)
+{
+	
 	return(0);
 }
 
