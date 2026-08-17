@@ -6,18 +6,31 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/17 23:58:55 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/08/14 23:55:19 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/08/17 03:05:38 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-
-
-void	nephallocation()
+#include <stdlib.h>
+// ========================================================================== //
+char static	*wordcut(char const *word, char cuterie)
 {
-
+	
 }
 
-char	**ft_split(char const *s, char c);
+char static	*memory(char const *chain)
 {
+  //
+  //malloc 
+  //
+  //return 
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char *result;
+
+	// memory s
+	// call wordcut >> memory
+	// free
 	// s the string to be split
 	// c the delimiter caracter
 	char	result;
