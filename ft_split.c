@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/17 23:58:55 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/08/26 23:59:40 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/08/31 18:18:07 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -14,7 +14,20 @@
 // ========================================================================== //
 static char	*wordcut(char const *word, char cuterie)
 {
-	// 
+	int		i;
+	char	*temp;
+	
+	i = 0;
+	while(word[i] != "\0")
+	{
+
+		temp = word[i];
+		if (word[1] != cuterie)
+		{
+			//memory()
+		}
+			i++;
+	}
 }
 
 static size_t	*memory(char const *chain)
