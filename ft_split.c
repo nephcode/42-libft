@@ -6,38 +6,45 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/17 23:58:55 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/08/31 18:18:07 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/09/01 18:26:02 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stddef.h>
-// ========================================================================== //
+// PROG ===================================================================== //
+
+static size_t	memory(const char *chain)
+{
+	size_t	count;
+	char	*copy;
+
+	count = 0;
+	while (chain[count] != '\0')
+	{
+		
+	}
+	
+}
+// -------------------------------------------------------------------------- //
 static char	*wordcut(char const *word, char cuterie)
 {
-	int		i;
+	size_t	i;
+	size_t	lenght;
 	char	*temp;
 	
 	i = 0;
-	while(word[i] != "\0")
+	while (word[i] != '\0')
 	{
 
 		temp = word[i];
-		if (word[1] != cuterie)
+		if (word[i] != cuterie)
 		{
 			//memory()
 		}
 			i++;
 	}
 }
-
-static size_t	*memory(char const *chain)
-{
-  //
-  //malloc 
-  //
-  //return 
-}
-
+// -------------------------------------------------------------------------- //
 char	**ft_split(char const *s, char c)
 {
 	char *result;
