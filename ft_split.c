@@ -6,7 +6,7 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/17 23:58:55 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/09/01 18:26:02 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/09/03 23:56:21 by nephco                     |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -19,9 +19,9 @@ static size_t	memory(const char *chain)
 	char	*copy;
 
 	count = 0;
-	while (chain[count] != '\0')
+	while (chain[count] && chain[count] != '\0')
 	{
-		
+		// arg
 	}
 	
 }
