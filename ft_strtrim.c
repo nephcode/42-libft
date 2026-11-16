@@ -6,10 +6,12 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 02:03:17 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/06/12 21:21:20 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 04:40:53 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+
+#include "libft.h"
+//#include <stdlib.h>
 /* PROG ===================================================================== */
 size_t	ft_strlen(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
@@ -32,7 +34,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_subtr(s1, head, tail - head));
 }
 /* MAIN ===================================================================== */
-#include <stdio.h>
+/*
+ * #include <stdio.h>
 
 static void	display(char const *play1, char const *play2)
 {
@@ -45,7 +48,7 @@ static void	display(char const *play1, char const *play2)
 }
 
 // ---------------------------------------------------------------------------//
-
+/*
 int	main(int argc, char **argv)
 {
 	if (argc != 3)
@@ -56,7 +59,7 @@ int	main(int argc, char **argv)
 	display(argv[1], argv[2]);
 	return (0);
 }
-
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */
