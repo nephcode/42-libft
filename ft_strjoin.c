@@ -6,12 +6,13 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/11 21:25:59 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/11 22:58:54 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 04:03:27 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <stdlib.h>
 
+#include "libft.h"
+//#include <stddef.h>
+//#include <stdlib.h>
 /* PROG ===================================================================== */
 
 static size_t	ft_strlen(const char *value)
@@ -64,6 +65,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (ramcopy);
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 
 static void	display(const char *play1, const char *play2)
@@ -86,6 +88,7 @@ int	main(int argc, char **argv)
 	display(argv[1], argv[2]);
 	return (0);
 }
+*/
 /* ========================================================================== */
 /* END ============================================================== 42_ === */
 /* ================================================================= NEPHCODE */

@@ -6,18 +6,20 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/ 0x2A /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/08/10 04:42:02 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/11/16 04:14:05 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-#include <stddef.h>
+
+#include "libft.h"
+//#include <stdlib.h>
+//#include <stddef.h>
 /* ========================================================================== */
-static size_t ft_strlen(const char *chain)
+static size_t	ft_strlen(const char *chain)
 {
-	const char	 *value;
+	const char	*value;
 
 	value = chain;
-	while(*value)
+	while (*value)
 	{
 		value++;
 	}
@@ -39,16 +41,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!value)
 		return (NULL);
 	count = 0;
-	while(count < length)
+	while (count < length)
 	{
 		value[count] = f(count, s[count]);
 		count++;
 	}
 	value[count] = '\0';
 	return (value);
-
 }
 /* ========================================================================== */
+/*
 #include <stdio.h>
 
 static char	ft_toupper(char c)
@@ -86,7 +88,7 @@ int	main(int argc, char **argv)
 	display(argv[1]);
 	return (0);
 }
-
+*/
 /* ========================================================================== */
 /* END ====================================================================== */
 /* ========================================================================== */

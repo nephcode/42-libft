@@ -6,10 +6,11 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/13 20:33:21 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/13 22:07:49 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:50:12 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /* PROG ===================================================================== */
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -17,15 +18,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 	if (!s || !f)
 		return ;
-
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		f(i, &s[i]);
 		i++;
 	}
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 
 void up(unsigned int index, char *chain)
@@ -54,7 +55,7 @@ int	main(int argc, char **argv)
 	display(argv[1]);
 	return (0);
 }
-
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */

@@ -6,24 +6,25 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/04/29 17:24:37 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/12 19:16:06 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 04:10:10 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*=== PROG ===================================================================*/
 size_t	ft_strlen(char *s)
 {
 	size_t	count;
-	
+
 	count = 0;
-	while(s[count])
+	while (s[count])
 	{
 		count++;
 	}
 	return (count);
 }
 /*=== MAIN ===================================================================*/
-
+/*
 #include <unistd.h>
 #include <stdio.h>
 
@@ -62,3 +63,4 @@ int	main(int argc, char **argv)
 	}
 	return(0);
 }
+*/

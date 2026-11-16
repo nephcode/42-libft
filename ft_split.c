@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: neph <neph@student.42.fr>                  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/17 23:58:55 by nephco            #+#    #+#             */
-/*   Updated: 2026/11/16 02:16:20 by neph             ###   ########.fr       */
+/*                                                             /#/  |#/|#|    */
+/*   ft_split.c                                               /#/   |/ |#|    */
+/*                                                           /#/      /#/     */
+/*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
+/*                                                         /#/____  |#| /|    */
+/*   Created: 2026/11/16 03:36:22 by nephcohe             |#######| |#|/#|    */
+/*   Updated: 2026/11/16 03:41:48 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ static size_t	memory(char const *s, char c)
 		else
 			i++;
 	}
-	return (word_count + 1);	
+	return (word_count + 1);
 }
 // -------------------------------------------------------------------------- //
-static char	*wordcut(char const *s, char c, size_t *i)
 
+static char	*wordcut(char const *s, char c, size_t *i)
 {
 	char	*ptr;
 	size_t	j;
@@ -59,6 +59,7 @@ static char	*wordcut(char const *s, char c, size_t *i)
 	return (ptr);
 }
 // -------------------------------------------------------------------------- //
+
 static char	**freeall(char **array, size_t j)
 {
 	size_t	i;
@@ -73,12 +74,14 @@ static char	**freeall(char **array, size_t j)
 	return (NULL);
 }
 // -------------------------------------------------------------------------- //
+
 static char	**place(char **array, size_t j)
 {
 	array[j] = NULL;
 	return (array);
 }
 // -------------------------------------------------------------------------- //
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;

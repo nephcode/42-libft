@@ -6,10 +6,12 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/03 17:26:38 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/03 19:00:07 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:35:32 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
+#include "libft.h"
+//#include <unistd.h>
 
 static void	ft_putchar_fd(char c, int fd)
 {
@@ -17,6 +19,7 @@ static void	ft_putchar_fd(char c, int fd)
 }
 
 /* PROG ===================================================================== */
+
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	count;
@@ -29,6 +32,7 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 
 static int	nephtoi(const char *value)
@@ -67,7 +71,7 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */

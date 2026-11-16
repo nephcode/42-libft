@@ -6,10 +6,12 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/04 17:42:59 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/04 22:40:54 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 04:08:47 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+#include "libft.h"
+//#include <stddef.h>
 /* PROG ===================================================================== */
 static size_t	len(const char *value)
 {
@@ -42,6 +44,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 
 static int	nephtoi(char *num)
@@ -88,6 +91,7 @@ int	main(int argc, char **argv)
 	display(argv[1], argv[2], nephtoi(argv[3]));
 	return (0);
 }
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */

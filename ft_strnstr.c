@@ -6,10 +6,12 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/31 18:37:23 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/01 23:58:48 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 04:16:25 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+#include "libft.h"
+//#include <stddef.h>
 /* PROG  ==================================================================== */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -38,6 +40,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
@@ -71,7 +74,7 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */

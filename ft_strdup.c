@@ -6,12 +6,15 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/16 20:55:29 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/08 21:39:33 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:48:05 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <stdlib.h>
+
+#include "libft.h"
+//#include <stddef>
+//#include <stdlib.h>
 /* PROG ===================================================================== */
+
 static size_t	ft_strlen(const char *value)
 {
 	const char	*length;
@@ -22,7 +25,8 @@ static size_t	ft_strlen(const char *value)
 	return (value - length);
 }
 // ---------------------------------------------------------------------------//
-static void	 *ft_memcpy(void *dest, const void *src, size_t n)
+
+static void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t				count;
 	unsigned char		*d;
@@ -39,9 +43,10 @@ static void	 *ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 // ---------------------------------------------------------------------------//
-char *ft_strdup(const char *s)
+
+char	*ft_strdup(const char *s)
 {
-	char *copy;
+	char	*copy;
 
 	copy = malloc(ft_strlen(s) + 1);
 	if (copy == NULL)
@@ -53,6 +58,7 @@ char *ft_strdup(const char *s)
 	}
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 
 static void	display(const char *playS)
@@ -77,6 +83,7 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 }
+*/
 /* ========================================================================== */
 /* END  ======================================================= 42_ ========= */
 /* ============================================================ NEPHCODE ==== */
