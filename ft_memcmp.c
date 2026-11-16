@@ -6,10 +6,12 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/19 03:07:05 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:06:37 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/16 05:06:58 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <strings.h>
+
+#include "libft.h"
+//#include <strings.h>
 /* PROG ===================================================================== */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/03 20:18:33 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:45:10 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/16 05:08:45 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftr.h"
+#include "libft.h"
 /* === PROG ================================================================= */
 
 int	ft_tolower(int c)
