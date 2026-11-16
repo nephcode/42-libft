@@ -1,17 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                             /#/  |#/|#|    */
-/*   libft.h                                                  /#/   |/ |#|    */
-/*                                                           /#/      /#/     */
-/*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
-/*                                                         /#/____  |#| /|    */
-/*   Created: 2026/05/01 21:50:31 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/24 23:51:48 by nephco                     |#|  NEPH     */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: neph <neph@student.42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 21:50:31 by nepcohen          #+#    #+#             */
+/*   Updated: 2026/11/16 00:40:01 by neph             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef libtf.c
-#define
+#ifndef LIBFT_H
+#define LIBFT_H
+
+#include <strings.h>
+#include <stdio.h>
+#include <unistd.h>
 
 typedef struct		s_list
 {
@@ -19,9 +23,7 @@ typedef struct		s_list
 	struct	s_list	*next;
 }					t_list;
 
-#include <strings.h>
-#include <stdio.h>
-#include <unistd.h>
+
 /* PROTOTYPES =============================================================== */
 
 // PART 1 // CLASSIC LIBC
@@ -76,4 +78,4 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_List *lst, void *(*f)(void *), void (*del)(void*));
 
 /* ========================================================================== */
-#endef
+#endif

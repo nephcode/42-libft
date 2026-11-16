@@ -1,64 +1,115 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                             /#/  |#/|#|    */
-/*   ft_split.c                                               /#/   |/ |#|    */
-/*                                                           /#/      /#/     */
-/*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
-/*                                                         /#/____  |#| /|    */
-/*   Created: 2026/06/17 23:58:55 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/09/03 23:56:21 by nephco                     |#|  NEPH     */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: neph <neph@student.42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/17 23:58:55 by nephco            #+#    #+#             */
+/*   Updated: 2026/11/16 02:16:20 by neph             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-#include <stddef.h>
+
+#include "libft.h"
+
 // PROG ===================================================================== //
 
-static size_t	memory(const char *chain)
-{
-	size_t	count;
-	char	*copy;
-
-	count = 0;
-	while (chain[count] && chain[count] != '\0')
-	{
-		// arg
-	}
-	
-}
-// -------------------------------------------------------------------------- //
-static char	*wordcut(char const *word, char cuterie)
+static size_t	memory(char const *s, char c)
 {
 	size_t	i;
-	size_t	lenght;
-	char	*temp;
-	
-	i = 0;
-	while (word[i] != '\0')
-	{
+	size_t	word_count;
 
-		temp = word[i];
-		if (word[i] != cuterie)
+	i = 0;
+	word_count = 0;
+	while (s[i])
+	{
+		if (s[i] != c)
 		{
-			//memory()
+			word_count++;
+			while (s[i] != c && s[i])
+				i++;
 		}
+		else
 			i++;
 	}
+	return (word_count + 1);	
+}
+// -------------------------------------------------------------------------- //
+static char	*wordcut(char const *s, char c, size_t *i)
+
+{
+	char	*ptr;
+	size_t	j;
+	size_t	k;
+
+	j = 0;
+	k = *i;
+	while (s[k] != c && s[k])
+		k++;
+	ptr = malloc(sizeof(char) * ((k - *i) + 1));
+	if (!ptr)
+		return (NULL);
+	while (s[*i] != c && s[*i])
+	{
+		ptr[j] = s[*i];
+		(*i)++;
+		j++;
+	}
+	ptr[j] = '\0';
+	return (ptr);
+}
+// -------------------------------------------------------------------------- //
+static char	**freeall(char **array, size_t j)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < j)
+	{
+		free(array[i]);
+		i++;
+	}
+	free(array);
+	return (NULL);
+}
+// -------------------------------------------------------------------------- //
+static char	**place(char **array, size_t j)
+{
+	array[j] = NULL;
+	return (array);
 }
 // -------------------------------------------------------------------------- //
 char	**ft_split(char const *s, char c)
 {
-	char *result;
+	size_t	i;
+	size_t	j;
+	char	**array;
 
-	// memory s
-	// call wordcut >> memory
-	// free
-	// s the string to be split
-	// c the delimiter caracter
-	char	result;
+	if (!s || c == '\0')
+		return (NULL);
+	array = malloc(sizeof(char *) * memory(s, c));
+	if (!array)
+		return (NULL);
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			array[j] = wordcut(s, c, &i);
+			if (!array[j])
+				return (freeall(array, j));
+			j++;
+		}
+		else
+			i++;
+	}
+	return (place(array, j));
 }
 // ========================================================================== //
 // ========================================================================== //
 // ========================================================================== //
+/*
 char display(char const *playS, char playC)
 {
 	split (playS, playC)
@@ -71,5 +122,5 @@ int	main(int argc, char **argv)
 // make code:	
 	return(0);
 }
-
+*/
 // ========================================================================== //
