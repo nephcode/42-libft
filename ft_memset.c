@@ -6,20 +6,21 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/25 14:54:26 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/26 13:06:41 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:27:02 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-//#include "libft.h"
-#include <strings.h>
+
+#include "libft.h"
+//#include <strings.h>
 /* PROG ===================================================================== */
-void *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			count;
 	unsigned char	*p;
 
-	p = (unsigned char*)s;
+	p = (unsigned char *)s;
 	count = 0;
-	while  (count < n)
+	while (count < n)
 	{
 		p[count] = (unsigned char)c;
 		count++;
@@ -27,6 +28,7 @@ void *ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -55,7 +57,7 @@ int main (int argc, char **argv)
 	}
 	return (0);
 }
+*/
 /* ========================================================================== */
 /* END =================================================== 42_ ============== */
 /* ======================================================= NEPHCODE ========= */
-

@@ -6,19 +6,21 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/20 15:37:20 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/26 15:37:20 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:23:39 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+//#include <stddef.h>
+#include "libft.h"
 /* PROG ===================================================================== */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t				count;
 	unsigned char		*d;
 	unsigned const char	*s;
-	
-	d = (unsigned char*)dest;
-	s = (unsigned const char*)src;
+
+	d = (unsigned char *)dest;
+	s = (unsigned const char *)src;
 	count = 0;
 	while (count < n)
 	{
@@ -29,7 +31,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 }
 
 /* MAIN ===================================================================== */
-#include <stdio.h>
+/*
+ #include <stdio.h>
 #include <stdlib.h>
 
 void display(void *playD, const void *playS, size_t playN)
@@ -53,8 +56,7 @@ int	main(int argc, char **argv)
 		display(argv[1], argv[2], atoi(argv[3]));
 	}
 }
-
-
+*/
 /* ========================================================================== */
 /* END =================================================== 42_ ============== */
 /* ======================================================= NEPHCODE ========= */

@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                              /#/   |/ |#|    */
 /*                                                    +:+ +:+         +:+     */
 /*   By: neph <neph@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/28 11:35:59 by nephcohe          #+#    #+#             */
-/*   Updated: 2026/11/16 01:39:19 by neph             ###   ########.fr       */
+/*   Created: 2026/11/16 02:21:52 by nephcohe          #+#    #+#             */
+/*   Updated: 2026/11/16 02:26:29 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 typedef struct	s_list
 {
 	void			*content;
@@ -17,12 +17,12 @@ typedef struct	s_list
 }	t_list;
 */
 #include "libft.h"
-/* FUNCTION  **************************************************************** */
-t_list *ft_lstnew(void *content)
+
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;
 
-	node = malloc(sizeof(sizeof(t_list));
+	node = malloc(sizeof(t_list));
 	if (!node)
 		return (NULL);
 	node->content = content;

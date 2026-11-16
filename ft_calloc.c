@@ -1,15 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: neph <neph@student.42.fr>                  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/05 22:52:15 by nepcohen          #+#    #+#             */
-/*   Updated: 2026/11/16 01:51:52 by neph             ###   ########.fr       */
+/*                                                             /#/  |#/|#|    */
+/*   ft_calloc.c                                              /#/   |/ |#|    */
+/*                                                           /#/      /#/     */
+/*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
+/*                                                         /#/____  |#| /|    */
+/*   Created: 2026/11/16 02:37:06 by nephcohe             |#######| |#|/#|    */
+/*   Updated: 2026/11/16 02:38:46 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 /* PROG ===================================================================== */
 static void	ft_bzero(void *s, size_t n)
@@ -19,19 +18,19 @@ static void	ft_bzero(void *s, size_t n)
 
 	c = (unsigned char *)s;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		c[i] = 0;
 		i++;
 	}
 }
 
-void *ft_calloc(size_t n, size_t size)
+void	*ft_calloc(size_t n, size_t size)
 {
 	void	*result;
 
 	result = malloc(n * size);
-	if (result  == NULL)
+	if (result == NULL)
 		return (NULL);
 	ft_bzero(result, n * size);
 	return (result);

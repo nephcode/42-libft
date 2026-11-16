@@ -3,22 +3,23 @@
 /*                                                             /#/  |#/|#|    */
 /*   ft_memchr.c                                              /#/   |/ |#|    */
 /*                                                           /#/      /#/     */
-/*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
+/*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
-/*   Created: 2026/05/16 21:36:49 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/20 22:03:48 by nepcohen                   |#| NEPH_     */
+/*   Created: 2026/11/16 02:31:19 by nephcohe             |#######| |#|/#|    */
+/*   Updated: 2026/11/16 02:36:12 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <strings.h>
-/* PROG ===================================================================== */
+#include "libft.h"
+
+/* PROG ====i================================================================ */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t count;
-	const unsigned char *seg;
+	size_t				count;
+	const unsigned char	*seg;
 
 	seg = (const unsigned char *)s;
 	count = 0;
-	while(count < n)
+	while (count < n)
 	{
 		if (seg[count] == (unsigned char)c)
 		{
@@ -30,6 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 #include <stdlib.h>
 void display(const void *play, int playInt, size_t playSize)
@@ -41,7 +43,7 @@ void display(const void *play, int playInt, size_t playSize)
 	if (result == 0)
 		printf("_memchr retourne zero\n");
 	else
-		printf("_member retourne l'adresse `%p` pour `%zu`\n",(const char *)result, playSize);
+		printf("_member `%p` pour `%zu`\n",(const char *)result, playSize);
 }
 
 int	main(int argc, char **argv)
@@ -55,6 +57,7 @@ int	main(int argc, char **argv)
 		printf("Merci de saisir les trois arguments\n");
 	}
 }
+*/
 /* ========================================================================== */
 /* END ========================================================= 42_ ======== */
 /* ============================================================= NEPHCODE === */

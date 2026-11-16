@@ -6,10 +6,12 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/21 17:53:17 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/26 21:28:18 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:24:41 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+//#include <stddef.h>
+#include "libft.h"
 /* PROG ===================================================================== */
 static void	avant(unsigned char *d, unsigned const char *s, size_t n)
 {
@@ -51,7 +53,7 @@ voi	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /* MAIN ===================================================================== */
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -76,6 +78,7 @@ int	main(int argc, char **argv)
 		display(argv[1], argv[2], atoi(argv[3]));
 	}
 }
+*/
 /* ========================================================================== */
 /* END ================================================== 42_ =============== */
 /* ====================================================== NEPHCODE ========== */

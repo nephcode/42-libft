@@ -6,16 +6,19 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/02 22:49:35 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/03 02:15:26 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/11/16 03:29:45 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
+#include "libft.h"
+//#include <unistd.h>
 /* PROG ===================================================================== */
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
 /* MAIN ===================================================================== */
+/*
 #include <stdio.h>
 
 static int	nephtoi(const char *value)
@@ -55,11 +58,12 @@ int	main(int argc, char **argv)
 		printf("Merci de saisir les argument du Main `2`\n");
 	else
 	{
-		//printf("Char :`%d` __ Description :`%d`\n", nephtoi(argv[1]), nephtoi(argv[2]));
+		//printf("Char :`%d` __ :`%d`\n", nephtoi(argv[1]), nephtoi(argv[2]));
 		display(argv[1][0], nephtoi(argv[2]));
 	}
 	return (0);
 }
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */

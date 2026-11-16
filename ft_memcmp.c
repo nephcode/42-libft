@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/19 03:07:05 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/05/20 16:10:56 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/16 03:06:37 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include <strings.h>
@@ -16,11 +16,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	size_t				count;
 	const unsigned char	*c1;
 	const unsigned char	*c2;
-	
+
 	c1 = (const unsigned char *)s1;
 	c2 = (const unsigned char *)s2;
 	count = 0;
-	while(count < n)
+	while (count < n)
 	{
 		if (c1[count] != c2[count])
 			return (c1[count] - c2[count]);
@@ -30,6 +30,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 /* MAIN  ==================================================================== */
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -58,7 +59,7 @@ int	main(int argc, char **argv)
 		printf("merci de saisir trois arguments\n");
 	}
 }
-
+*/
 /* ========================================================================== */
 /* END ====================================================== 42_ =========== */
 /* ========================================================== NEPHCODE ====== */

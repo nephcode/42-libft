@@ -6,11 +6,13 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 21:24:45 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/06/16 03:54:13 by nephco                     |#|  NEPH     */
+/*   Updated: 2026/11/16 03:03:46 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
 
+//#include <stdlib.h>
+#include "libft.h"
+/* ************************************************************************** */
 static size_t	digitcount(int num)
 {
 	size_t	length;
@@ -29,8 +31,8 @@ static size_t	digitcount(int num)
 	}
 	return (length);
 }
-/* PROG ===================================================================== */
 
+/* PROG ===================================================================== */
 char	*ft_itoa(int n)
 {
 	char	*chain;
@@ -58,9 +60,9 @@ char	*ft_itoa(int n)
 	}
 	return (chain);
 }
-
 /* MAIN ===================================================================== */
-#include <stdio.h>
+/*
+ #include <stdio.h>
 
 static int	nephtoi(const char *nptr)
 {
@@ -109,6 +111,7 @@ int	main(int argc, char **argv)
 	display(nephtoi(argv[1]));
 	return (0);
 }
+*/
 /* ========================================================================== */
 /* END ============================================================= 42_ ==== */
 /* ================================================================= NEPHCODE */
