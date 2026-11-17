@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/27 21:14:50 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:28:35 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 19:06:25 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	len(char *chain)
 }
 // ----------------------------------------------------------------------------
 
-char	*strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t	count;
 

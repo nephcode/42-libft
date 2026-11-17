@@ -6,14 +6,14 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/29 17:57:34 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:15:34 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 19:07:39 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stddef.h>
 /* PROG ===================================================================== */
-int	strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	count;
 

@@ -6,7 +6,7 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 05:11:17 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/17 16:47:16 by nepcohen                   |#| NEPH_     */
+/*   Updated: 2026/11/17 19:00:37 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ typedef struct s_list
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
+int				ft_isascii(int c);
 int				ft_isdigit(int c);
-int				ft_isdigit(int c);
+int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
