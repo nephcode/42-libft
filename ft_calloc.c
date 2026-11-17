@@ -6,12 +6,14 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 02:37:06 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 02:38:46 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:31:43 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdlib.h>
 /* PROG ===================================================================== */
-static void	ft_bzero(void *s, size_t n)
+/*
+ * static void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*c;
 	size_t			i;
@@ -24,7 +26,7 @@ static void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
+*/
 void	*ft_calloc(size_t n, size_t size)
 {
 	void	*result;

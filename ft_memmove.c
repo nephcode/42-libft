@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/21 17:53:17 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:24:41 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:44:31 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	arriere(unsigned char *d, unsigned const char *s, size_t n)
 	}
 }
 
-voi	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
 	unsigned const char	*s;

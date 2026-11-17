@@ -6,18 +6,18 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/03 17:26:38 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:35:32 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:46:51 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <unistd.h>
-
+/*
 static void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
+*/
 /* PROG ===================================================================== */
 
 void	ft_putstr_fd(char *s, int fd)

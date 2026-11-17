@@ -6,22 +6,20 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 05:11:17 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 05:12:00 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:43:01 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stddef.h>
+# include <stdio.h>
+# include <unistd.h>
 
-#include <strings.h>
-#include <stddef.h>
-#include <stdio.h>
-#include <unistd.h>
-
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
-	struct	s_list	*next;
+	struct s_list	*next;
 }					t_list;
 
 /* PROTOTYPES =============================================================== */
@@ -29,19 +27,20 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
-int		ft_isdigit(int c)
+int		ft_isdigit(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *nptr);
+int		ft_memcmp( const void *s1, const void *s2, size_t n);
 int		ft_lstsize(t_list *lst);
 
+void	ft_bzero(void *s, size_t n);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *)); //free
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_front(t_list **lst, t_list *new);
-void	ft_memcmp( const void s1, const void s2, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
@@ -52,7 +51,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
-void	*ft_bzero(void *s, size_t n);
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
@@ -62,7 +60,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);//malloc
 char	*ft_strjoin(char const *s1, char const *s2);//malloc
 char	*ft_strtrim(char const *s1, char const *set);//malloc
 char	*ft_itoa(int n);//malloc
-char	*ft_strmapi(char const *s, char (f*)(unsigned int, char));//malloc
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));//malloc
 char	**ft_split(char const *s, char c);//malloc,free
 
 size_t	ft_strlen(char *str);

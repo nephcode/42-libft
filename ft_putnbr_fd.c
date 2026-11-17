@@ -6,18 +6,19 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/03 15:13:23 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:33:16 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:45:52 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <unistd.h>
 /* PROG ===================================================================== */
-static void	ft_putchar_fd(char c, int fd)
+/*
+ * static void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n < -2147483647)

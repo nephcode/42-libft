@@ -6,12 +6,12 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 03:36:22 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:41:48 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:50:08 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdlib.h>
 // PROG ===================================================================== //
 
 static size_t	memory(char const *s, char c)
