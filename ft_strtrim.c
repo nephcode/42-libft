@@ -6,16 +6,16 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 02:03:17 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/11/17 05:17:37 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 15:02:58 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 /* PROG ===================================================================== */
-size_t	ft_strlen(const char *s);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strchr(const char *s, int c);
+//size_t	ft_strlen(const char *s);
+//char	*ft_substr(char const *s, unsigned int start, size_t len);
+//char	*ft_strchr(const char *s, int c);
 // -------------------------------------------------------------------------- //
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -31,11 +31,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		head++;
 	while (tail > head && ft_strchr(set, s1[tail - 1]))
 		tail--;
-	return (ft_subtr(s1, head, tail - head));
+	return (ft_substr(s1, head, tail - head));
 }
 /* MAIN ===================================================================== */
 /*
- * #include <stdio.h>
+#include <stdio.h>
 
 static void	display(char const *play1, char const *play2)
 {
@@ -48,7 +48,6 @@ static void	display(char const *play1, char const *play2)
 }
 
 // ---------------------------------------------------------------------------//
-/*
 int	main(int argc, char **argv)
 {
 	if (argc != 3)

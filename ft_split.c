@@ -6,7 +6,7 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 03:36:22 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/17 04:50:08 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 17:17:07 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,8 +88,6 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	char	**array;
 
-	if (!s || c == '\0')
-		return (NULL);
 	array = malloc(sizeof(char *) * memory(s, c));
 	if (!array)
 		return (NULL);

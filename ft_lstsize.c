@@ -6,7 +6,7 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/17 03:50:46 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/17 03:55:39 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 16:41:30 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	if (!lst)
