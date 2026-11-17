@@ -6,26 +6,27 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/ 0x2A /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/16 04:03:16 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:14:05 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 05:04:48 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdlib.h>
+#include <stdlib.h>
 //#include <stddef.h>
 /* ========================================================================== */
-static size_t	ft_strlen(const char *chain)
+/*
+static size_t	ft_strlen(const char *str)
 {
 	const char	*value;
 
-	value = chain;
+	value = str;
 	while (*value)
 	{
 		value++;
 	}
-	return (value - chain);
+	return (value - str);
 }
-
+*/
 // -------------------------------------------------------------------------- //
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

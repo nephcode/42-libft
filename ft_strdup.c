@@ -6,15 +6,15 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/16 20:55:29 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:48:05 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:56:28 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stddef>
-//#include <stdlib.h>
+#include <stdlib.h>
 /* PROG ===================================================================== */
-
+/*
 static size_t	ft_strlen(const char *value)
 {
 	const char	*length;
@@ -24,8 +24,9 @@ static size_t	ft_strlen(const char *value)
 		value++;
 	return (value - length);
 }
+*/
 // ---------------------------------------------------------------------------//
-
+/*
 static void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t				count;
@@ -42,6 +43,7 @@ static void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+*/
 // ---------------------------------------------------------------------------//
 
 char	*ft_strdup(const char *s)

@@ -6,13 +6,13 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/04/29 17:24:37 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:10:10 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 05:02:05 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /*=== PROG ===================================================================*/
-size_t	ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	count;
 

@@ -6,7 +6,7 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 05:11:17 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/17 04:43:01 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 04:59:05 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*ft_itoa(int n);//malloc
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));//malloc
 char	**ft_split(char const *s, char c);//malloc,free
 
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 

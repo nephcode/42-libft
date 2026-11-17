@@ -6,14 +6,14 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/13 13:47:45 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:44:56 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 05:13:38 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /* PROG ===================================================================== */
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	count;
 

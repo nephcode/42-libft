@@ -6,7 +6,7 @@
 /*   By: neph <neph@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 02:21:52 by nephcohe          #+#    #+#             */
-/*   Updated: 2026/11/16 02:26:29 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 05:08:03 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -17,7 +17,8 @@ typedef struct	s_list
 }	t_list;
 */
 #include "libft.h"
-
+#include <stdlib.h>
+/* ************************************************************************** */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

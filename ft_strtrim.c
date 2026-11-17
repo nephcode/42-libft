@@ -6,16 +6,16 @@
 /*   By: nephco <nephco@student.42.fr>                      /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/12 02:03:17 by nephco               |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:40:53 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 05:17:37 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdlib.h>
+#include <stdlib.h>
 /* PROG ===================================================================== */
 size_t	ft_strlen(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-void	*ft_strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
 // -------------------------------------------------------------------------- //
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -29,8 +29,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	tail = ft_strlen(s1);
 	while (s1[head] && ft_strchr(set, s1[head]))
 		head++;
-	while (tail > head && ft_strchr(set, s1[end - 1]))
-		end--;
+	while (tail > head && ft_strchr(set, s1[tail - 1]))
+		tail--;
 	return (ft_subtr(s1, head, tail - head));
 }
 /* MAIN ===================================================================== */
