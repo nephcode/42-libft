@@ -6,7 +6,7 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 02:37:06 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/18 01:29:51 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/18 15:37:23 by nepcohen                   |#| NEPH_     */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -31,7 +31,7 @@
 void	*ft_calloc(size_t n, size_t size)
 {
 	void	*result;
-	
+
 	if (size != 0 && n > SIZE_MAX / size)
 		return (NULL);
 	result = malloc(n * size);
