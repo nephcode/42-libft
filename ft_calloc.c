@@ -6,11 +6,12 @@
 /*   By: nephcohe <nephco@learner.42.tech>                  /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/11/16 02:37:06 by nephcohe             |#######| |#|/#|    */
-/*   Updated: 2026/11/17 04:31:43 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/18 01:29:51 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdlib.h>
+#include <stdint.h>
 /* PROG ===================================================================== */
 /*
  * static void	ft_bzero(void *s, size_t n)
@@ -30,7 +31,9 @@
 void	*ft_calloc(size_t n, size_t size)
 {
 	void	*result;
-
+	
+	if (size != 0 && n > SIZE_MAX / size)
+		return (NULL);
 	result = malloc(n * size);
 	if (result == NULL)
 		return (NULL);

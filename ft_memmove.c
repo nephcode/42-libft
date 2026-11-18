@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/21 17:53:17 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/17 04:44:31 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/18 01:06:19 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	arriere(unsigned char *d, unsigned const char *s, size_t n)
 	size_t	count;
 
 	count = n;
-	while (n > 0)
+	while (count > 0)
 	{
 		count--;
 		d[count] = s[count];

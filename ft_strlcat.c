@@ -6,14 +6,14 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/06/05 20:04:38 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 04:04:58 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/18 01:26:43 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stddef.h>
 /* PROG ===================================================================== */
-
+// debug avec deux while et du sommeil 
 static size_t	len(const char *value)
 {
 	const char	*length;
@@ -32,10 +32,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	length_s = len(src);
-	length_d = len(dst);
-	if (size == 0)
-		return (length_d);
-	while (src[i] != '\0' && i < size -1)
+	length_d = 0;
+	while (length_d < size && dst[length_d])
+		length_d++;
+	if (length_d == size)
+		return (size + length_s);
+	while (src[i] && i < size - length_d - 1)
 	{
 		dst[length_d + i] = src[i];
 		i++;

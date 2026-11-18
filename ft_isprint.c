@@ -6,7 +6,7 @@
 /*   By: nepcohen <nepcohen@learner.42.tech>                /#/      /#/      */
 /*                                                         /#/____  |#| /|    */
 /*   Created: 2026/05/11 19:25:22 by nepcohen             |#######| |#|/#|    */
-/*   Updated: 2026/11/16 03:01:11 by nephcohe                   |#|  NEPH     */
+/*   Updated: 2026/11/17 23:59:13 by nephcohe                   |#|  NEPH     */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -14,13 +14,9 @@
 /* PROG ********************************************************************* */
 int	ft_isprint(int c)
 {
-	if (! (c >= 0 && c <= 32) || (c == 127))
-	{
-		return (0);
-	}
-	else
-	{
+	if (c >= 32 && c <= 126)
 		return (1);
-	}
+	return (0);
 }
 /* ************************************************************************** */
+// j'aurais du ecrire les tests // vraiment perdre du temps sur ca -_-
